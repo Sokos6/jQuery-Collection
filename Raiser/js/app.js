@@ -15,3 +15,15 @@ $('div').find('li').filter(function(index){
 if($('div').children().is('p')) {
     $('p').children('span').css({'font-family': 'serif', 'color':'turquoise'});
 }
+
+var isFirstChild = $('ul').is(function() {
+    if($('ul').children().length == 4)
+        return true;
+    else
+        return false;
+});
+if(isFirstChild) {
+    alert("The UL is a large family with 4 children!");
+} else {
+    alert("The UL can have more children!");
+}
