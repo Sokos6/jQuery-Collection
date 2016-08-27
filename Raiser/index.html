@@ -20,6 +20,31 @@
     </p>
     <p>If you liked this example, tell others. If not, tell us!</p>
 </div>
+
+<!--Chained:
+$('ul').siblings('p').css('border', '1px solid red');
+Unchained:
+var ul = $('ul');
+var siblings = ul.siblings('p');
+siblings.css('border', '1px solid red');
+Chained:
+$('body').find($('p')).css('border', '1px solid red');
+Unchained:
+var body = $('body');
+var p = $('p');
+var pInBody = body.find(p);
+pInBody.css('border', '1px solid red');
+Chained:
+$('input').parents("form").css('border', '1px solid red');
+Unchained:
+var input = $('input');
+var form = input.parents('form');
+form.css('border', '1px solid red'); -->
+
+
+
+
+
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="js/app.js"></script>
 
